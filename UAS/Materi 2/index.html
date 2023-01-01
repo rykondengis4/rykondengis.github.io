@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 1 ASJ cpanel</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Tampilan Home/index.html">Home Page</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="content">
+        <article class="card">
+            <h2>1.	Cara upload file menggunakan ftp</h2>
+            <ol>
+                <li>Awal-awal Lakukan menginstalan filezilla di OS anda. Untuk link downloadnya silahkan klik 
+                    <a href="https://filezilla-project.org/">disini.</a>
+                </li>
+                <li>Setelah anda masuk ke link downloadnya, akan ada tampilan seperti berikut : <br><br>
+                
+                    <img src="assets/image/link ftp.png" alt="link download FileZilla"><br><br>
+
+                    Disini kita akan menginstal FileZilla versi client, jadi disini klik Download FileZilla Client.
+
+                </li>
+                <li>Setelah itu klik Download FileZilla Client lagi, kemudian klik download, maka 
+                    proses downloadopun akan dimulai <br><br>
+
+                    <img src="assets/image/download FilleZilla.png" alt="Proses Download FileZilla"> <br><br>
+
+                </li>
+                <li>Lakukan penginstalan sesuai prosedur yang sudah disediakan oleh FileZilla dan tunggu proses 
+                    penginstalannya selesai.
+                </li>
+                <li>Setelah FileZilla diinstal, Silahkan login ke cpanel</li>
+                <li>Masuk ke menu Files, Kemudian klik FTP Accounts <br><br>
+
+                    <img src="assets/image/Menu ftp accounts.png" alt="ftp menu"> <br><br>
+
+                </li>
+                <li>Setelah itu akan muncul tampilan sebagai berikut ini, silahkan isi bagian login
+                    sesuai dengan nama yang sudah kalian tentukan. sebagai contoh disini saya mengisinya
+                    dengan nama latihan <br><br>
+
+                    <img src="assets/image/formftp.png" alt="form ftp"><br><br>
+
+                </li>
+
+                <li>Di kolom pengisian password kalian bisa menggunakan password yang sudah kalian
+                    tentukan, akan tetapi ada beberapa persyaratan yang harus dipenuhi, yaitu harus
+                    menggunakan angka, simbol dan berbagai syarat lainnya. Untuk mempermudah, silahkan
+                    klik password generator. Maka akan muncul kolom seperti berikut ini : <br><br>
+
+                    <img src="assets/image/passwd ftp.png" alt="passwd ftp"> <br><br>
+
+                    Akan muncul password dalam bentuk random, silahkan di copy kemudian salin ke
+                    perangkat lunak pengolah kata, seperti notepad atau ms.word dan simpan. Setelah itu
+                    centang "I have copied this password in a safe place." dan klik Use Password.
+
+                </li>
+                <li>Setelah itu klik "Create FTP Account", Maka akan akun FTP yang sudah dibuat akan
+                    muncul di bagian FTP Account <br><br>
+
+                    <img src="assets/image/akun ftp.png" alt="akun ftp"><br><br>
+
+                </li> 
+                <li>Setelah itu klik configure FTP Client, maka akan muncul "Manual settings"</li>
+                <li>copy FTP Username kalian kemudian pastekan di kolom Username yang ada di FileZilla</li>
+                <li>Begitu pula dengan FTP Server dan port, Pastekan di kolom Host dan port yang ada di FileZilla</li>
+                <li>Untuk password, silahkan masukkan password yang sudah dibuat di notepad tadi</li>
+                <li>Tunggu prosesnya hingga FileZilla terhubung dengan FTP akun</li>
+                <li>Jika sudah berhasil Terhubung, Maka akan muncul konfigurasinya seperti berikut ini <br><br>
+
+                    <img src="assets/image/konfigurasi ftp.png" alt="konfigurasi ftp"><br><br>
+
+                </li>
+                <li>Untuk membedakan File Lokal dan File FTP silahkan perhatikan
+                    gambar ini : <br><br>
+
+                    <img src="assets/image/File lokal dan ftp.png" alt="File lokal dan file ftp"><br><br>
+
+                    File lokal adalah file yang ada di pc anda atau di komputer sendiri, sedangkan file ftp adalah File
+                    yang sudah dibuat di cpanel tadi.
+
+                </li>
+                <li>Lakukan drop dari salah satu file dari lokal ke FTP untuk menguploadnya, sebagai contoh disini
+                    saya akan Mengupload File gambar yang bernama "LOGO TECH" <br><br>
+
+                    <img src="assets/image/Upload file FTP.png" alt="Upload"><br><br>
+
+                </li>
+                <li>Untuk mengecek berhasil atau tidak, silahkan masuk ke Files di cpanel,
+                    lalu masuk ke File manager. Biasanya File yang sudah di Upload tadi akan tersimpan
+                    di sebuah folder yang bernama sesuai dengan nama domain anda sendiri. Kemudian
+                    akan ada folder yang sesuai dengan nama FTP Account, seperti punya saya yang 
+                    bernama latihan. <br><br>
+
+                    <img src="assets/image/file ftp.png" alt="folder latihan"><br><br>
+
+                </li>
+                <li>Setelah itu masuk ke file tersebut, maka akan muncul file yang sudah di drop tadi atau
+                    diupload. <br><br>
+
+                    <img src="assets/image/Hasil Upload ftp.png" alt="Hasil Upload file"><br><br>
+
+                </li>
+
+            </ol>
+            
+        </article>
+        <article class="card">   
+            <h2>2.	Cara Menghubungkan Database Dengan User</h2>
+            <ol>
+                <li>Langkah awal yaitu login ke cpanel dan kemudian masuk ke menu Databses</li>
+                <li>Masuk ke menu MySQL Databases <br><br>
+
+                    <img src="assets/image/Database menu.png" alt="Menu Databases"><br><br>
+
+                </li>
+                <li>Setelah akan muncul Tampilan seperti berikut ini, silahkan masukkan buat databsenya
+                    terlebih dahulu, Disini saya membuat database dengan nama latihan <br><br>
+
+                    <img src="assets/image/buat database.png" alt="database"><br><br>
+
+                    Kemudian klik Create Databases. Jika sudah selesai, kembali ke menu MySQL Databses. 
+
+                </li>
+                <li>Database yang sudah dibuat akan muncul di tampilan Current Databases <br><br>
+
+                    <img src="assets/image/Databases.png" alt="Database"><br><br>
+
+                </li>
+                <li>Untuk mengecek database yang sudah dibuat, silahkan kembali ke menu cpanel,
+                    kemudian masuk ke menu databases dan klik phpMyAdmin <br><br>
+
+                    <img src="assets/image/cek databse.png" alt="cek database"> <br><br>
+
+                    Maka akan masuk ke halaman phpMyAdmin dan database yang sudah dibuat akan tampil <br><br>
+
+                    <img src="assets/image/phpMyAdmin.png" alt="phpMyAdmin"><br><br>
+
+                </li>
+                <li>Setelah Database sudah dibuat, maka lanjut ke proses pembuatan user database. Untuk pembuatan
+                    user database yaitu kembali ke menu MySQL Databases, lalu scroll ke bawah hingga menemukan
+                    MySQL Users. <br><br>
+
+                    <img src="assets/image/usermysql.png" alt="user MySQL"><br><br>
+
+                    Silahkan isi nama user dengan nama kalian, disini saya mengisi user dengan nama "ry" dan
+                    passwordnya silahkan buat sendiri atau bisa menggunakan Password generator password. Jika
+                    menggunakan Password generator, maka jangan lupa untuk menyimpannya di notepad.
+
+                </li>
+                <li>User yang sudah dibuat akan muncul seperti gambar berikut ini : <br><br>
+                
+                    <img src="assets/image/user database.png" alt="user database"><br><br>
+
+                    jika sudah, maka akan muncul kolom databases sebagai database yang akan dihubungkan dengan user. Jika
+                    sudah tampil seperti gambar di atas, Klik "add", Maka akan muncul tampilan seperti berikut ini <br><br>
+
+                    <img src="assets/image/User privilege.png" alt="Manage User privilege"><br><br>
+
+                    Di bagian ini kalian akan memberikan akses apa saja yang bisa dilakukan oleh user, Biasanya
+                    yang paling sering dilakukan adalah akses CRUD (Create, Read Update, Delete). Karena
+                    Disini untuk pengguna dasar, klik "ALL PRIVILEGES" Untuk memberikan semua hak akses ke user. <br><br>
+
+                    <img src="assets/image/Akes user.png" alt="Akses User"><br><br>
+
+                    Setelah itu klik "Make Changes"
+
+                </li>
+                <li>Jika sudah selesai maka akan muncuk notifikasi sukses seperti berikut ini <br><br>
+                
+                    <img src="assets/image/Akses User Sukses.png" alt="Sukses"> <br><br>
+
+                    Maka proses menghubungkan user dengan database sudah berhasil
+
+                </li>
+            </ol>
+                
+        </article>
+        <article class="card">  
+           
+                <h2>3. Remote Database</h2>
+                <p>Meremote databse yaitu membuat data atau input baru yang ada di database cpanel kita Melalui
+                    command line yang ada di pc atau labtop. Sebagai contoh disini saya menggunakan CMD yang ada di 
+                    pc atau labtop Untuk menambah sebuah tabel baru yang ada di database yang sudah dibuat tadi. Untuk
+                    mengetahui lebih lanjut, silahkan ikuti langkah-langkah berikut ini :
+                </p>
+                <ol>
+                    <li>Pertama-tama Masuk ke menu databases yang ada di cpanel, Kemudian klik Remote MySQL</li>   
+                    <li>Akan muncul tampilan berikut, di kolom pertama masukkan alamat ip client yang bisa mengakses
+                        database. Untuk memberikan semua akses, masukkan tanda "%", Kemudian klik "Add Host" <br><br>
+
+                        <img src="assets/image/Akses client.png" alt="Akses client"> <br><br>
+
+                        Akses yang sudah dibuat tadi akan muncul di bagian Manage Access Hosts <br><br>
+
+                        <img src="assets/image/Akes client berhasil dibuat.png" alt="Akses client"> <br><br>
+
+                    </li>   
+                     <li>Buka XAMPP Control Panel. Jika belum Mempunyai software-nya, silahkan download
+                        Melalui link di bawah ini : <br>
+
+                        <a href="https://www.apachefriends.org/download.html">https://www.apachefriends.org/download.html</a>
+                    </li>
+                    <li>Di menu XAMPP, nyalakan MySQL dengan cara mengklik ikon start <br><br>
+
+                        <img src="assets/image/XAMPP.png" alt="XAMPP"> <br><br>
+
+                    </li>
+                    <li>Berikutnya, Kita akan mengaktifkan databases yang akan kita remote. Ada 2 cara untuk mengaktifkannya,
+                        yaitu dengan cara masuk ke cmd, dan yang kedua masuk ke Shell langsung yang ada di XAMPP Control Panel.
+                        untuk yang pertama kali saya tunjukkan yaitu menggunakan cmd. Caranya buka cmd kemdian masukkan command 
+                        berikut ini : <br><br>
+
+                        <img src="assets/image/command aktif databases.png" alt="command aktif databases"><br><br>
+
+                        <hr>
+                        
+                        <b>--> cd xampp/mysql/bin</b><br>
+                        <b>--> mysql -h <"hostip"> -u <"username"> -p</b> 
+                        
+                        <hr><br><br>
+
+                        <p>Sebelum memasukkan command tersebut, pastikan bahwa posisi folder di cmd anda berada di c. Biasanya
+                            ketika membuka cmd, posisi folder ada di direktori C:\Users\<"nama user">. Untuk
+                            masuk ke direktori c, masukkan perintah "cd..", artinya kita naik satu folder, sehingga berubah benjadi
+                            "C:\Users". naik satu folder lagi sehingga posisi foldernya berada di direktori C:\. Setelah itu masukkan 
+                            command yang ada di atas.
+
+                        </p>
+
+                        
+                    </li>
+                    <li>Setelah memasukkan command di atas, tekan "enter", Maka akan muncul kolom pengisian password, masukkan
+                        password dari user MySQL yang sudah dibuat. Setelah memasukkan password tekan "enter", maka akan muncul
+                        tampilan seperti berikut ini <br><br>
+
+                        <img src="assets/image/Login mysql berhasil.png" alt="Login mysql"><br><br>
+
+                        Artinya login berhasil. <br><br>
+
+                    </li>
+
+                    <li>Untuk mengecek databases, masukkan command : <br><br> 
+                        
+                        <hr>
+
+                        <b>--> show databases;</b> 
+                    
+                        <hr><br><br>
+
+                        <img src="assets/image/show databases.png" alt="show databases"> <br><br>
+
+                        Maka databases dari user yang sudah dibuat tadi akan muncul. <br><br>
+
+                    </li>
+                    <li>Selanjutnya masuk ke database yang sudah dibuat tadi, disini database saya bernama "rykonden_Latihan",
+                        Jadi masukkan command : <br><br>
+                        <hr>
+                        <b>--> "use <"nama database">;"</b> 
+                        <hr><br><br>
+
+                        Kemudian tekan enter <br><br>
+
+                        <img src="assets/image/use database.png" alt="use database"><br><br>
+
+                    </li>
+                    <li>Setelah itu buat tabel melalui cmd. untuk penulisan querynya yaitu :  <br><br>
+                        <hr>
+                        <b>--> create table <"nama tabel"> (nama_kolom <"tipe data"> (nilai atau jumlah karakter))</b>
+                        <hr><br><br>
+
+                        Sebagai contoh, disini saya akan menambahkan tabel yang bernama "t_mahasiswa" dengan kolom nim, nama,
+                        dan prodi, sehingga saya memasukkan query : <br><br>
+
+                        <hr>
+                        <b>--> create table t_mahasiswa (nim int, nama varchar(50), prodi varchar(50));</b>
+                        <hr><br><br>
+
+                        <img src="assets/image/create table.png" alt="create table"><br><br>
+
+                        Jika muncul pesan "Query OK...", Berarti tabel berhasil dibuat.
+
+                    </li>
+                    <li>Setelah itu cek tabel yang ada di database dengan cara memasukkan query : 
+
+                        <hr>
+                        <b>--> show tables;</b>
+                        <hr><br><br>
+
+                        <img src="assets/image/show tables.png" alt="show tables"><br><br>
+
+                        Maka tabel yang dibuat tadi akan muncul, Seperti punya saya yang bernama "t_Mahasiswa"
+
+                    </li>
+                    <li>Untuk melihat Struktur tabel, masukkan query : 
+                        <hr>
+                        <b>--> describe nama_tabel</b>
+                        <hr><br><br>
+
+                        Sebagai contoh, disini saya akan melihat struktur tabel "t_mahasiswa", maka saya memasukkan
+                        query : <br><br>
+                        <hr>
+                        <b>--> describe t_mahasiswa</b>
+                        <hr><br><br>
+
+                        <img src="assets/image/desc table.png" alt="describe tabel"><br><br>
+
+                        Maka struktur tabel tersebut akan tampil.
+
+                    </li>
+                    <li>kemudian cek database tersebut di phpMyAdmin yang ada di cpanel, caranya yaitu
+                        login cpanel, masuk ke menu databases, klik phpMyAdmin
+                    </li>
+                    <li>Di tampilan phpMyAdmin, klik nama database, maka tabel yang dibuat tadi akan muncul <br><br>
+                        
+                        <img src="assets/image/tabel php.png" alt="tabel phpMyAdmin"><br><br>
+
+                    </li>
+                    <li>klik nama tabel untuk melihat kolom yang sudah dibuat, disini nama tabel yang saya buat adalah
+                        t_mahasiswa <br><br>
+
+                        <img src="assets/image/kolom tabel.png" alt="Kolom tabel"> <br><br>
+
+                        Maka kolom tabel akan muncul.
+
+                    </li>
+                    <li>Jika anda ingin menambahkan nilai dari tabel, masukkan query seperti berikut ini di cmd : <br><br>
+                    <hr>
+                    <b>--> insert into nama_tabel values (nilaikolom1, nilai kolom2,...)</b>
+                    <hr><br><br>
+
+                    Sebagai contoh, disini saya akan menambahkan nilai di kolom nim dengan angka "21501038", nama dengan
+                    "rykondengis", dan prodi dengan "Teknik Informatika", Maka query yang akan saya masukkan adalah : <br><br>
+                    <hr>
+                    <b>--> insert into t_mahasiswa values (21501038,"rykondengis","Teknik Informatika")</b>
+                    <hr><br><br>
+
+                    <img src="assets/image/Menambahkan input tabel.png" alt="menambahkan input tabel"><br><br>
+
+                    </li>
+                    <li>Setelah itu cek di phpMyAdmin dari user tersebut melalui cpanel</li>
+                    <li>Maka hasil dari input tadi akan masuk ke dalam tabel yang sudah dibuat <br><br>
+                    
+                        <img src="assets/image/input tabel.png" alt="input tabel"><br><br>
+
+                    </li>
+                </ol>
+                <h3>Meremote dengan menggunakan Shell yang ada di software XAMPP Control Panel</h3>
+                <p>Untuk menggunakan Shell ini, sebenarnya sangat mudah dan command-nya sama saja, Karena
+                    masih termasuk dalam cmd, akan tetapi menggunakan Shell akan sangat mudah karena hanya dengan menekan ikonnya saja. 
+                    Untuk langkah-langkahnya yaitu sebagai berikut : 
+                </p>
+                <ol>
+                    <li>Buka software XAMPP</li>
+                    <li>klik ikon Shell yang ada di sebelah kanan <br><br>
+                    
+                        <img src="assets/image/Shell xampp.png" alt="Shell"><br><br>
+
+                    </li>
+                    <li>Maka akan muncul tampilan seperti berikut ini <br><br>
+                    
+                        <img src="assets/image/Shell.png" alt="Shell"><br><br>
+
+                        <p>Jika di cmd kita harus masuk ke direktori c:\xampp\mysql\bin, Maka di 
+                            Shell ini kita tidak perlu memasukkan command untuk masuk ke direktori tersebut, Karena 
+                            dengan menggunakan ini kita langsung memasukkan command untuk masuk ke user MySQL. <br><br>
+                            <hr>
+                            <b>--> -h <"hostip"> -u <"nama user"> -p</b>
+                            <hr><br><br>
+                            Kemudian masukkan passwd. <br>
+                            Untuk semua query membuat database itu sama saja seperti query yang ada di cmd.
+                        </p>
+                        
+                    </li>
+                </ol>
+        </article>
+        <footer>
+            <center>Tentang Saya</center>
+            <p>Nama saya adalah Qusyairi kondengis, nama panggilan ry,
+                Status saya Sebagai mahasiswa yang saat ini sedang 
+                kuliah di politeknik gorontalo (POLTEKGO). </p>
+            <p>Instagram : rykondengis</p>
+            <p>Facebook : Ry kondengis</p>
+        </footer>
+    </div>
+</body>
+</html>
